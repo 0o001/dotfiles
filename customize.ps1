@@ -100,7 +100,7 @@ Function Set-WindowsColor() {
     Stop-Process -ProcessName explorer -Force -ErrorAction SilentlyContinue
 }
 
-$imageLocation = "$(Get-Location)\wallpaper.png"
+$imageLocation = "$(Get-Location)\wallpaper.jpg"
 Set-WallPaper -Image $imageLocation
 
 Remove-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{645FF040-5081-101B-9F08-00AA002F954E}" -Force -Verbose
