@@ -1,1 +1,1 @@
-curl -s "https://api.quotable.io/quotes/random?tags=history" | jq '.[] | .content,.author'
+clear;curl -s "https://api.quotable.io/quotes/random?tags=history" | jq '.[] | .content,.author'
